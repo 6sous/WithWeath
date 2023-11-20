@@ -1,0 +1,95 @@
+#weather-layout {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+
+  &.clear {
+    &.day {
+      background-image: url("../assets/images/clear_sky.jpg");
+    }
+    &.night {
+      background-image: url("../assets/images/clear_sky_moon.jpg");
+    }
+  }
+
+  &.clouds {
+    &.day {
+      background-image: url("../assets/images/clouds_5.jpg");
+    }
+    &.night {
+      background-image: url("../assets/images/clouds_night_2.jpg");
+    }
+  }
+
+  &.rain,
+  &.drizzle {
+    &.day {
+      background-image: url("../assets/images/rain_5.jpg");
+    }
+    &.night {
+      background-image: url("../assets/images/rain_4.jpg");
+    }
+  }
+
+  &.snow {
+    &.day {
+      background-image: url("../assets/images/snowflakes_2.jpg");
+    }
+    &.night {
+      background-image: url("../assets/images/snowflakes_night.jpg");
+    }
+  }
+
+  &.thunderstorm {
+    &.day {
+      background-image: url("../assets/images/thunderstorm_2.jpg");
+    }
+    &.night {
+      background-image: url("../assets/images/thunderstorm_night_2.jpg");
+    }
+  }
+
+  &.wind,
+  &.squall {
+    background-image: url("../assets/images/wind_2.jpg");
+  }
+
+  &.tornado {
+    background-image: url("../assets/images/big_tornado.jpg");
+  }
+
+  &.fog,
+  &.mist,
+  &.haze {
+    background-image: url("../assets/images/fog.jpg");
+  }
+
+  &.sand {
+    &.day {
+      background-image: url("../assets/images/sand_day.jpg");
+    }
+    &.night {
+      background-image: url("../assets/images/sand_night.jpg");
+    }
+  }
+
+  &.dust {
+    background-image: url("../assets/images/dust_night.jpg");
+  }
+
+  &.ash {
+    background-image: url("../assets/images/ash.jpg");
+  }
+
+  &.smoke {
+    &.day {
+      background-image: url("../assets/images/smoke_day.jpg");
+    }
+    &.night {
+      background-image: url("../assets/images/smoke_night.jpg");
+    }
+  }
+}

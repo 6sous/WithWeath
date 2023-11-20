@@ -1,0 +1,103 @@
+.burger-menu {
+  .menu-button {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+    .line {
+      width: 100%;
+      height: 2px;
+      background: var(--quiet-white);
+      display: block;
+      position: absolute;
+      right: 0;
+      transition: all 0.3s ease-out;
+      pointer-events: none;
+      transition: opacity 0.3s 0.15s ease-out;
+      border-radius: 8px;
+      &.day {
+        background: var(--color-tertiary);
+      }
+
+      &:nth-child(1) {
+        width: 80%;
+        transform: translateY(-8px);
+      }
+      &:nth-child(3) {
+        transform: translateY(8px);
+        width: 60%;
+      }
+      &:nth-child(1),
+      :nth-child(3) {
+        transition: transform 0.3s ease-out;
+      }
+    }
+    &.open span:nth-child(1) {
+      width: 100%;
+      transform: translate(0) rotate(135deg);
+    }
+    &.open span:nth-child(2) {
+      opacity: 0;
+      transition: opacity 0s ease-out;
+    }
+    &.open span:nth-child(3) {
+      width: 100%;
+      transform: translate(0) rotate(-135deg);
+    }
+  }
+  .links {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    background-color: var(--quiet-white);
+    transform: translateX(-100%) ();
+    transition: transform 0.3s ease-out;
+    z-index: 1;
+    &.day {
+      background-color: var(--quiet-white);
+    }
+    &.night {
+      background-color: var(--black-ish);
+    }
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    .link {
+      display: inline-block;
+      position: relative;
+      a {
+        font-size: 1.5rem;
+        font-family: var(--advent-pro);
+        font-weight: 500;
+        color: var(--color-secondary);
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -0.4rem;
+          width: 100%;
+          height: 2px;
+          border-radius: 8px;
+          transform: scaleX(0);
+          transform-origin: left;
+          background: var(--color-secondary);
+          transition: transform 0.3s ease-out;
+        }
+        &:hover::after,
+        &:focus-within::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
