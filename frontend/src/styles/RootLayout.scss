@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&family=Poppins:wght@200;400;600&display=swap");
+.root-layout {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+
+  // color variables
+  --color-primary: #d9cab3;
+  --color-secondary: #f28123;
+  --color-tertiary: #4f6079;
+  --black-ish: #151617;
+  --quiet-white: #f5f5f5;
+  --bg-gradient: linear-gradient(
+    45deg,
+    var(--black-ish),
+    var(--color-tertiary) 160%
+  );
+
+  // font variables
+  --advent-pro: "Advent Pro", sans-serif;
+
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  main {
+    min-height: 100dvh;
+    position: relative;
+  }
+  footer {
+    padding-inline: 0.5rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 0.8rem;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+  }
+}

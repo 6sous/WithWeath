@@ -1,0 +1,78 @@
+.menu-container {
+  --blob-dimension: 56px;
+  --container-width: 200px;
+
+  width: var(--container-width);
+  height: calc(var(--container-width) / 2);
+  position: fixed;
+  bottom: calc(36px + var(--blob-dimension) / 2 + 1.2rem);
+  left: 50%;
+  transform: translateX(-50%);
+
+  &.hidden {
+    display: none;
+  }
+
+  .deploy,
+  .blob {
+    width: var(--blob-dimension);
+    height: var(--blob-dimension);
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .deploy {
+    z-index: 2;
+  }
+  i {
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .blob {
+    display: grid;
+    place-items: center;
+    &.blob-1 {
+      transition: all 0.2s 0.1s ease-in-out;
+    }
+    &.blob-2 {
+      transition: all 0.2s 0.2s ease-in-out;
+    }
+    &.blob-3 {
+      transition: all 0.2s 0.3s ease-in-out;
+    }
+    &.blob-4 {
+      transition: all 0.2s 0.4s ease-in-out;
+    }
+    &.blob-5 {
+      transition: all 0.2s 0.5s ease-in-out;
+    }
+  }
+
+  &.active {
+    .blob-1 {
+      left: 0;
+    }
+    .blob-2 {
+      top: 30%;
+      left: 15%;
+    }
+    .blob-3 {
+      top: 0;
+      left: 50%;
+    }
+    .blob-4 {
+      top: 30%;
+      left: 85%;
+    }
+    .blob-5 {
+      left: 100%;
+    }
+  }
+}

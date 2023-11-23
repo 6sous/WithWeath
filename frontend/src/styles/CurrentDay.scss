@@ -1,0 +1,179 @@
+.current-day {
+  padding-top: 6rem;
+  width: 100%;
+  height: 100%;
+  font-family: "poppins", sans-serif;
+  position: relative;
+
+  .main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.35);
+    color: var(--quiet-white);
+    padding-top: 2rem;
+
+    p {
+      width: 100%;
+      text-align: center;
+      font-size: 8rem;
+      font-family: "Advent Pro", sans-serif;
+      font-weight: 500;
+      position: relative;
+
+      .unit-temperature {
+        font-size: 2rem;
+        position: absolute;
+        top: 1.2rem;
+      }
+    }
+    .city-name {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    figure {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .weather-icon {
+        width: 4rem;
+      }
+      figcaption {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .additional-info {
+    --pt: 4rem;
+
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-inline: 1rem;
+    padding-top: var(--pt);
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--black-ish);
+    border-radius: 100% 100% 0% 0% / 24% 24% 0% 0%;
+    box-shadow: 0px -1px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--quiet-white);
+    transition:
+      border-radius 0.8s ease-out,
+      height 0.3s ease-out;
+
+    &.day {
+      background-color: var(--quiet-white);
+      color: var(--black-ish);
+    }
+    &.expanded {
+      border-radius: 0;
+      height: 100dvh;
+      padding-top: calc(var(--pt) + 64px);
+      .expand-additional-info {
+        top: calc(1rem + 64px);
+      }
+    }
+
+    .expand-additional-info {
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--quiet-white);
+      &.day {
+        color: var(--black-ish);
+      }
+      i {
+        display: grid;
+        place-items: center;
+      }
+    }
+
+    .info-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      .current-date {
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-style: italic;
+        letter-spacing: 1px;
+      }
+      .description {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--color-primary);
+        &.day {
+          color: var(--color-tertiary);
+        }
+      }
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-family:
+        Advent Pro,
+        sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--quiet-white);
+      border: 1px solid #4f607966;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-top: 2rem;
+      &.day {
+        color: var(--color-tertiary);
+      }
+    }
+
+    .hourly-weather {
+      width: 100%;
+      padding-block: 1rem;
+      display: grid;
+      place-content: center;
+    }
+
+    .detailed-info {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 1rem;
+
+      .detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        i {
+          font-size: 1.5rem;
+          display: grid;
+          place-items: center;
+          color: var(--color-secondary);
+        }
+        .detail-text {
+          font-size: 0.8rem;
+        }
+        .detail-value {
+          span {
+            font-weight: 600;
+            margin-right: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+}

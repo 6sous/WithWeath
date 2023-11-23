@@ -1,0 +1,33 @@
+.top-navbar {
+  padding-inline: 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  // &.day {
+  //   background-color: var(--quiet-white);
+  // }
+  // &.night {
+  //   background-color: var(--black-ish);
+  // }
+  .logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: var(--quiet-white);
+    &.day {
+      color: var(--color-tertiary);
+    }
+
+    img.logo {
+      width: 40px;
+    }
+  }
+}

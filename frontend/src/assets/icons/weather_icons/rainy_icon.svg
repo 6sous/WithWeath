@@ -1,0 +1,33 @@
+<svg width="168" height="168" viewBox="0 0 168 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="rainy icon">
+<g id="clouds">
+<g id="big cloud">
+<path id="Vector" d="M34.5 112C20.969 112 10 101.031 10 87.5C10 74.1039 20.7514 63.219 34.0961 63.0033C35.6399 38.9949 55.6017 20 80 20C105.405 20 126 40.5949 126 66C126 91.4051 105.405 112 80 112H34.5Z" fill="#9DA5CC"/>
+<path id="Vector_2" d="M34.5 112C20.969 112 10 101.031 10 87.5C10 84.6987 10.4702 82.0071 11.3359 79.5C11.3359 109.5 36 112 70.5 112H34.5Z" fill="#8C93BA"/>
+<path id="Vector_3" d="M125.999 66C125.999 91.4051 105.404 112 79.9993 112H53C39.6665 91.9998 55.8122 63.3825 82 65.8863C82.9762 62.9374 84.9617 58.9487 88.0671 54.9861C93.873 47.5778 103.593 40.2606 117.952 40C123.029 47.3963 125.999 56.3512 125.999 66Z" fill="#8C93BA"/>
+</g>
+<path id="small cloud" d="M55 92C55 77.6406 66.6406 66 81 66C83.5258 66 85.9675 66.3602 88.2766 67.032C92.4198 52.0224 106.173 41 122.5 41C142.106 41 158 56.8939 158 76.5C158 96.1061 142.106 112 122.5 112H97.6143H64.3857C58.6509 107.231 55 100.042 55 92Z" fill="#C9C9EA"/>
+</g>
+<g id="rain">
+<path id="Line 1" d="M25.7083 118L23 130.715" stroke="#7697EC" stroke-width="0.5" stroke-linecap="round"/>
+<path id="Line 2" d="M35.2915 118L30.7083 139.517" stroke="#7697EC" stroke-linecap="round"/>
+<path id="Line 3" d="M41.958 118L40.2914 125.824" stroke="#7697EC" stroke-width="2" stroke-linecap="round"/>
+<path id="Line 4" d="M51.1245 118L46.958 137.561" stroke="#7697EC" stroke-width="3" stroke-linecap="round"/>
+<path id="Line 5" d="M60.7078 118L56.1246 139.517" stroke="#7697EC" stroke-linecap="round"/>
+<path id="Line 6" d="M68.2078 118L65.7078 129.737" stroke="#7697EC" stroke-width="3" stroke-linecap="round"/>
+<path id="Line 7" d="M78.4158 118L73.2076 142.451" stroke="#7697EC" stroke-width="0.5" stroke-linecap="round"/>
+<path id="Line 13" d="M89.0405 118L83.4157 144.408" stroke="#7697EC" stroke-width="3" stroke-linecap="round"/>
+<path id="Line 8" d="M98.207 118L94.0405 137.561" stroke="#7697EC" stroke-width="0.5" stroke-linecap="round"/>
+<path id="Line 9" d="M108.415 118L103.207 142.451" stroke="#7697EC" stroke-linecap="round"/>
+<path id="Line 10" d="M119.457 118L113.415 146.364" stroke="#7697EC" stroke-width="2" stroke-linecap="round"/>
+<path id="Line 11" d="M128.623 118L124.457 137.561" stroke="#7697EC" stroke-width="2" stroke-linecap="round"/>
+<path id="Line 12" d="M137.165 118L133.623 134.627" stroke="#7697EC" stroke-linecap="round"/>
+<path id="Line 6_2" d="M39.5 130L37.0001 141.737" stroke="#7697EC" stroke-linecap="round"/>
+<path id="Line 3_2" d="M64.6665 135L62.9999 142.824" stroke="#7697EC" stroke-width="2" stroke-linecap="round"/>
+<path id="Line 8_2" d="M123.167 128L119 147.561" stroke="#7697EC" stroke-width="0.5" stroke-linecap="round"/>
+<path id="Line 1_2" d="M51.7083 134L49 146.715" stroke="#7697EC" stroke-width="0.5" stroke-linecap="round"/>
+<path id="Line 12_2" d="M27.5415 126L24 142.627" stroke="#7697EC" stroke-linecap="round"/>
+<path id="Line 13_2" d="M101.667 122L99.9999 129.824" stroke="#7697EC" stroke-width="2" stroke-linecap="round"/>
+</g>
+</g>
+</svg>

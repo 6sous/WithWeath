@@ -1,0 +1,29 @@
+.searchLabel {
+  width: 100%;
+  max-width: 360px;
+
+  .searchInput {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    border: none;
+    background-color: var(--quiet-white);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    border-radius: 2rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  i {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+    color: var(--black-ish);
+    opacity: 0.8;
+  }
+}
