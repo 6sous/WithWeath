@@ -15,7 +15,7 @@ function burgerMenu({ isItDay }) {
         type="button"
         className={`menu-button ${isOpen && "open"}`}
         aria-label="toggle navigation"
-        aria-expanded="false"
+        aria-expanded={isOpen ? "true" : "false"}
         onClick={handleClick}
       >
         <span className={`line ${isItDay && "day"}`}></span>

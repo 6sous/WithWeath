@@ -4,6 +4,7 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 import logo from "./assets/logo/logo.svg";
 import ImageSlider from "./components/ImageSlider";
 import NavTop from "./components/NavTop";
+import SearchInput from "./components/SearchInput";
 
 function App() {
   const [city, setCity] = useState("");
@@ -45,23 +46,17 @@ function App() {
             powered by <br />
             <span>OpenWeather & 6sous</span>
           </p>
+          <SearchInput
+            nameAttribute="city"
+            value={city}
+            handleSearch={handleSearchCity}
+            handleKeyPress={handleKeyPress}
+            handleClick={handleClick}
+            placeholder="Search a city..."
+          />
         </section>
         <section className="city-search-section">
           <ImageSlider slides={cityImages} />
-          <label htmlFor="city" className="searchLabel">
-            <input
-              type="search"
-              placeholder="Search a city..."
-              name="city"
-              className="searchInput"
-              value={city}
-              onChange={handleSearchCity}
-              onKeyDown={handleKeyPress}
-            />
-            <button type="button" onClick={handleClick}>
-              <i className="fi fi-br-search" />
-            </button>
-          </label>
         </section>
         <footer>
           <p>© 2022 WithWeath. All rights reserved.</p>

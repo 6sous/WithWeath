@@ -27,11 +27,12 @@
       gap: 1rem;
       .logo {
         width: 8rem;
+        width: clamp(8rem, 12vw + 2rem, 12rem);
       }
       .title {
         font-family: "Advent Pro", sans-serif;
         font-weight: 500;
-        font-size: 3rem;
+        font-size: clamp(3rem, 6vw + 1rem, 5rem);
         color: var(--quiet-white);
         letter-spacing: 6px;
       }
@@ -39,7 +40,7 @@
     p {
       font-family: "Poppins", sans-serif;
       font-weight: 200;
-      font-size: 0.6rem;
+      font-size: clamp(0.7rem, 1vw + 0.5rem, 1rem);
       color: var(--color-secondary);
       gap: 0.5rem;
       span {
@@ -48,6 +49,15 @@
     }
   }
 
+  .searchLabel {
+    width: 70%;
+    margin-top: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    z-index: 1;
+  }
   .city-search-section {
     position: relative;
     overflow: hidden;
@@ -59,36 +69,55 @@
     height: 100%;
     border-radius: 0% 100% 0% 100% / 100% 67% 33% 0%;
     box-shadow: 0px -1px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
 
-    .searchLabel {
-      width: 70%;
-      max-width: 360px;
-      margin-top: 1rem;
-      position: absolute;
+@media screen and (min-width: 768px) {
+  .landingPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    background: none;
 
-      .searchInput {
-        width: 100%;
-        padding: 0.5rem 2rem;
-        border: none;
-        background-color: var(--quiet-white);
-        font-family: "Poppins", sans-serif;
-        font-size: 1rem;
-
-        &:focus {
-          outline: none;
+    .hero {
+      width: auto;
+      gap: 1rem;
+      padding: 6rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: #d9cab333;
+      box-shadow: 0px -1px 4px 4px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(4px);
+      .logo-container {
+        gap: 2rem;
+      }
+      p {
+        color: var(--color-secondary);
+        gap: 0.5rem;
+        span {
+          font-style: italic;
         }
       }
-
-      i {
-        display: grid;
-        place-items: center;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 2rem;
-        color: var(--black-ish);
-        opacity: 0.8;
+      .searchLabel {
+        width: 100%;
+        margin-top: 2rem;
+        position: relative;
+        transform: none;
+        left: 0;
+        bottom: 0;
       }
+    }
+
+    .city-search-section {
+      height: 100dvh;
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      border-radius: 0;
+      justify-content: flex-start;
     }
   }
 }

@@ -26,8 +26,7 @@ function CurrentDay() {
   const [infoExpanded, setInfoExpanded] = useState(false);
 
   const today = moment().format("dddd, MMMM Do");
-  const { currentWeatherData, overcastWeatherData } =
-    useRouteLoaderData("weather-layout");
+  const { currentWeatherData } = useRouteLoaderData("weather-layout");
 
   const isItDay = useIsItDay(
     currentWeatherData.dt,

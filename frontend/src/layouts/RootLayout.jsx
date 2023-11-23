@@ -9,9 +9,9 @@ import "../styles/RootLayout.scss";
 function RootLayout() {
   return (
     <div className="root-layout">
-      {/* <header>
+      <header>
         <NavTop />
-      </header> */}
+      </header>
       <main>
         <Outlet />
       </main>
